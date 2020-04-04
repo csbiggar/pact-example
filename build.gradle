@@ -23,7 +23,7 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-engine:5.4.2"
     testImplementation "org.assertj:assertj-core:3.11.1"
 
-    testImplementation "au.com.dius:pact-jvm-provider-junit5_2.12:3.6.11"
+    testImplementation "au.com.dius:pact-jvm-provider-junit5:4.0.8"
 
     testImplementation("au.com.dius:pact-jvm-consumer-junit:4.0.2")
 

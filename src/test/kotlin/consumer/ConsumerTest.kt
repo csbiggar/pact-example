@@ -16,8 +16,8 @@ class ContractTest {
             .consumer("carolyn.pretend-consumer")
             .hasPactWith("carolyn.google")
             .given("google exists")
-            .uponReceiving("an inventory request")
-            .path("/store/inventory")
+            .uponReceiving("a request to google homepage")
+            .path("/")
             .method("GET")
 
         val inventoryPact = petStoreInventoryCall
@@ -28,7 +28,7 @@ class ContractTest {
 
         val result = inventoryPact.runTest {
             val (_, response, _) =
-                "http://localhost:6060/store/inventory"
+                "http://localhost:6060/"
                     .httpGet()
                     .response()
 

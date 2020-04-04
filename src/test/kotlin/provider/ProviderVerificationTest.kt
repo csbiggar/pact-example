@@ -32,7 +32,7 @@ class ProviderVerificationTest {
 
     // Add this state in to make the test pass
 //    @State("google exists")
-//    fun `some other state`() {
+//    fun `some state`() {
 //
 //    }
 
